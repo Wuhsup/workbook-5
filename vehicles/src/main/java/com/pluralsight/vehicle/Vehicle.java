@@ -3,17 +3,18 @@ package com.pluralsight.vehicle;
 public class Vehicle {
 
     private String color;
-    private int numOfPass;
     private int cargoCapacity;
     private int fuelCapacity;
 
 
-    public String getColor() {
-        return color;
+    public Vehicle(String color, int cargoCapacity, int fuelCapacity) {
+        this.color = color;
+        this.cargoCapacity = cargoCapacity;
+        this.fuelCapacity = fuelCapacity;
     }
 
-    public int getNumOfPass() {
-        return numOfPass;
+    public String getColor() {
+        return color;
     }
 
     public int getCargoCapacity() {
@@ -26,10 +27,6 @@ public class Vehicle {
 
     public void setColor(String color) {
         this.color = color;
-    }
-
-    public void setNumOfPass(int numOfPass) {
-        this.numOfPass = numOfPass;
     }
 
     public void setCargoCapacity(int cargoCapacity) {
